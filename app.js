@@ -26,7 +26,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // Blog route to read posts.json
-test 
 app.get('/blog', (req, res) => {
   fs.readFile(path.join(__dirname, 'data', 'posts.json'), 'utf-8', (err, data) => {
     if (err) {
