@@ -29,9 +29,10 @@ app.use('/users', usersRouter);
 app.get('/blog', (req, res) => {
   fs.readFile(path.join(__dirname, 'data', 'posts.json'), 'utf-8', (err, data) => {
     if (err) {
-      return res.status(500).json({ error: 'Failed to load posts' });
+      return res.status(500).send("Error loading posts");
     }
-    res.json(JSON.parse(data));
+    const posts = JSON.parse(data);
+    res.render('blog', { posts }); 
   });
 });
 
