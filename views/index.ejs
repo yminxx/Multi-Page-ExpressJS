@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo .dot {
+            width: 10px;
+            height: 10px;
+            background-color: orange;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 20px;
+        }
+
+        .editor {
+            font-weight: normal;
+            color: gray;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .nav-bar a:hover {
+            color: gray;
+        }
+
+        /* Container Layout */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            padding: 20px;
+        }
+
+        /* Profile Image */
+        .profile-section img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Text Section */
+        .text-section {
+            max-width: 400px;
+            text-align: left;
+            margin-left: 50px;
+        }
+
+        .text-section h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .text-section h3 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .text-section p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+        }
+
+        .resume {
+            background-color: orange;
+        }
+
+        .projects {
+            background-color: red;
+        }
+
+        .contact {
+            background-color: #50C9E8;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="dot"></span>
+            <h1><strong>Ysa Gabrielle</strong> <span class="editor">IT Student</span></h1>
+        </div>
+        <nav class="nav-bar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="profile-section">
+            <img src="bg.jpg" alt="Profile">
+        </div>
+        <div class="text-section">
+            <h1>Hello!</h1>
+            <p>I'm Ysa, a third year IT student from Technological Institute of the Philippines- Manila.
+                Feel free to explore and learn more about my journey and interests.
+            </p>
+            <div class="buttons">
+                <a href="/" class="btn resume">Home</a>
+                <a href="/about" class="btn contact">About</a>
+                <a href="/contact" class="btn projects">Contact</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

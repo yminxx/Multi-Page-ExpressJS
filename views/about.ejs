@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo .dot {
+            width: 10px;
+            height: 10px;
+            background-color: orange;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 20px;
+        }
+
+        .editor {
+            font-weight: normal;
+            color: gray;
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .nav-bar a:hover {
+            color: gray;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            padding: 20px;
+        }
+
+        .profile-section img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .card-container {
+            background: #E52020;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            margin-left: 5%;
+        }
+
+        .info-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+        .info-container p {
+            font-size: 16px;
+            line-height: 1.2;
+            color: #F8F2DE;
+            margin: 3px 0 0 32px;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 20%;
+            min-width: 100px;
+            text-align: left;
+            margin-left: 4%;
+        }
+
+        .value {
+            flex: 1;
+            text-align: left;
+        }
+
+        .card-container h3 {
+            color: #020715;
+            font-size: 24px;
+        }
+
+        .card-container .label {
+            color: #F9CB43;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="dot"></span>
+            <h1><strong>Ysa Gabrielle </strong> <span class="editor"> IT Student</span></h1>
+        </div>
+        <nav class="nav-bar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>About Me.</h1>
+        <div class="card-container">
+            <div class="profile-section">
+                <img src="pic.jpg" alt="Profile">
+            </div>
+            <h3>Ysa Gabrielle Cervantes</h3>
+            <div class="info-container">
+                <p class="label">Course:</p>
+                <p class="value">Information Technology</p>
+            </div>
+            <div class="info-container">
+                <p class="label">Year:</p>
+                <p class="value">3rd Year</p>
+            </div>
+            <div class="info-container">
+                <p class="label">School:</p>
+                <p class="value">Technological Institute of the Philippines - Manila</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

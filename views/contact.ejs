@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo .dot {
+            width: 10px;
+            height: 10px;
+            background-color: orange;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 20px;
+        }
+
+        .editor {
+            font-weight: normal;
+            color: gray;
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .nav-bar a:hover {
+            color: gray;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            padding: 20px;
+        }
+
+        .contact-container {
+            background: #4F959D;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 400px;
+            margin-left: 5%;
+        }
+
+        .contact-container h3 {
+            color: #05102d;
+            font-size: 24px;
+        }
+
+        .contact-container .label {
+            font-weight: bold;
+            color: #f6f4f0;
+            margin-top: 10px;
+        }
+
+        .profile-img img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .message-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #F9CB43;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .message-btn:hover {
+            background-color: #C41717;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="dot"></span>
+            <h1><strong>Ysa Gabrielle</strong> <span class="editor">IT Student</span></h1>
+        </div>
+        <nav class="nav-bar">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Contact.</h1>
+        <div class="contact-container">
+            <div class="profile-img">
+                <img src="pic.jpg" alt="Profile">
+            </div>
+            <h3>Ysa Gabrielle Cervantes</h3>
+            <p class="label">Let's Connect</p>
+
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+                </a>
+            </div>
+
+            <a href="mailto:ysagabrielle.cervantes@gmail.com" class="message-btn">Message</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
